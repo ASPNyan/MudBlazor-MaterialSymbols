@@ -1,0 +1,9 @@
+﻿@namespace MudBlazor
+@inherits MudSymbolComponentBase
+
+@if (Symbol is not null)
+{
+    <span @attributes="@UserAttributes" class="@ClassName @Class" style="@StyleRuleString; @Style" dir="ltr">
+        @Symbol.ToLower().Trim().Replace(' ', '_')
+    </span>
+}

@@ -1,0 +1,8 @@
+﻿@namespace MudBlazor
+@inherits MudSymbolComponentBase
+
+@if (ChildContent is not null) {
+    <CascadingValue Value="@(this as MudSymbolComponentBase)" Name="@nameof(CascadingIconConfig)">
+        @ChildContent
+    </CascadingValue>
+}
